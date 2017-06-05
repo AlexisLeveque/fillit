@@ -4,3 +4,34 @@ Your program will take a file as parameter which contains a list of Tetriminos a
 arrange them to create the smallest square possible. Obviously, your main goal is to
 find this smallest square in the minimal amount of time, despite a exponentially growing
 number of possibilities each time a piece is added.
+## Usage
+`./fillit [file]`
+
+Example:
+```
+  cat sample.fillit | cat -e
+....$
+##..$
+.#..$
+.#..$
+$
+....$
+####$
+....$
+....$
+$
+#...$
+###.$
+....$
+....$
+$
+....$
+##..$
+.##.$
+....$
+  ./fillit sample.fillit | cat -e
+DDAA$
+CDDA$
+CCCA$
+BBBB$
+```
